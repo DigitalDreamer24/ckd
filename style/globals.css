@@ -106,11 +106,51 @@ a {
 }
 
 
+
+/*-- Global ---*/
+
+.rowReverse{
+  flex-direction: row-reverse;
+}
+
+.alignCenter{
+  align-items: center;
+}
+
+.headingBarL {
+  text-align: left;
+}
+
+.headingBarL h1, .headingBar h1 {
+  font-size: 79px;
+  font-weight: bolder;
+  color: #FCEDE0;
+  line-height: 0.7;
+}
+
+.headingBarL h2, .headingBar h2 {
+  color: #280B7D;
+  font-weight: 800;
+  margin-bottom: 0px;
+}
+
+.headingBar {
+  text-align: center;
+  margin: 45px 0px;
+}
+
+.subSmallHeading {
+  color: #ff623e;
+  font-weight: 600;
+  line-height: 0;
+  font-size: 17px;
+}
+
 /*--- Header ---*/
 
 
 section.heroSection {
-  height: 100vh;
+  height: 90vh;
 }
 
 header {
@@ -130,7 +170,7 @@ header {
 
 .navContactBar ul, .navLinkBar ul {
   display: flex;
-  gap: 18px;
+  gap: 12px;
   justify-content: end;
   align-items: center;
 }
@@ -184,7 +224,109 @@ header {
   background-repeat: no-repeat;
 }
 
-.alignCenter{
-  align-items: center;
 
+/*---- About Us ----*/
+
+section.aboutSection {
+  width: 100%;
+  margin-top: 70px;
+}
+
+.aboutUs {
+  padding: 15px;
+  border-radius: 60px;
+}
+
+.aboutUsText {
+  padding:0px 30px;
+}
+
+.aboutUsTextImg {
+  text-align: center;
+}
+
+.aboutUsOtrBox {
+  border: 2px solid #f4821f;
+  border-radius: 33px;
+}
+
+
+.globalButton p {
+  display: inline-block;
+  background: #ff623e;
+  padding: 5px 30px;
+  border-radius: 50px;
+  color: #fff;
+}
+
+
+/*--- venturesSection ---*/
+
+.venturesSection {
+  margin-top: 70px;
+  background-color: #FFF5ED;
+  padding: 40px 0px;
+}
+
+.ventureCardsBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ventureTitleBox {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.venturesinrBx {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.mb40{
+  margin-bottom:40px;
+}
+
+.ventureTitleBox p {
+  line-height: 0;
+}
+
+/*-- services --*/
+
+.serviceSection {
+  margin-top: 70px;
+}
+
+.serviceCard {
+  width: 20%;
+  border: 1px dashed #ff623e;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.serviceMainBox {
+  display: flex;
+  gap: 10px;
+}
+
+.serviceTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.serviceTitle img {
+  background: #D9D9D9;
+  width: 60px;
+  height: 60px;
+  padding: 14px;
+  border-radius: 70px;
+}
+
+.serviceTitle p {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
 }

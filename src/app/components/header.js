@@ -8,10 +8,10 @@ export default function Header() {
     return (
        
 <header>       
-    <div className='container-fluid'> 
+    <div className='container'> 
         <div className='row alignCenter'> 
             <div className='logoBox col-md-3'>
-                <Image src="/logo.png" alt="My Image" width={419} height={98} /> 
+                <Image src="/logo.png" alt="My Image" width={360} height={80} /> 
             </div>
             <div className='navBar col-md-9'>
                 <div className='navContactBar'>
@@ -36,7 +36,7 @@ export default function Header() {
                 </div>
             </div>
         </div>
-    </div>  
+    </div> 
 </header>
 
         )

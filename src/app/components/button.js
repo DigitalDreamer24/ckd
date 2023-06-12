@@ -1,11 +1,19 @@
-import Image from 'next/image';
+export default function GlobalButton({buttonValue,color}) {
+     
+    const orangeColor = {
+        backgroundColor: '#ff623e',
+        color: '#fff',
+    };
 
-export default function GlobalButton({buttonValue}) {
-
+    const myStyle = {
+        backgroundColor: 'blue',
+        color: 'white',
+        fontSize: '180px',
+      };
 
     return (        
-        <div className='globalButton'>            
-            <p> {buttonValue} </p>
+        <div className='globalButton' style={color}>            
+            <span> {buttonValue} </span>
         </div>
         )
     }

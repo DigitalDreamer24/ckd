@@ -109,6 +109,22 @@ a {
 
 /*-- Global ---*/
 
+
+.globalButton {
+  display: inline-block;
+  padding: 8px 25px;
+  border-radius: 40px;
+  width:fit-content;
+  cursor: pointer;
+}
+
+.globalButton p {
+  display: inline-block;
+  padding: 5px 25px;
+  border-radius: 50px;
+}
+
+
 .rowReverse{
   flex-direction: row-reverse;
 }
@@ -142,7 +158,7 @@ a {
 .subSmallHeading {
   color: #ff623e;
   font-weight: 600;
-  line-height: 0;
+  line-height: initial;
   font-size: 17px;
 }
 
@@ -251,15 +267,6 @@ section.aboutSection {
 }
 
 
-.globalButton p {
-  display: inline-block;
-  background: #ff623e;
-  padding: 5px 30px;
-  border-radius: 50px;
-  color: #fff;
-}
-
-
 /*--- venturesSection ---*/
 
 .venturesSection {
@@ -295,15 +302,18 @@ section.aboutSection {
 
 /*-- services --*/
 
+.serviceOtrBox .headingBar {
+  margin-top: 0px;
+}
+
 .serviceSection {
   margin-top: 70px;
 }
 
 .serviceCard {
-  width: 20%;
   border: 1px dashed #ff623e;
-  border-radius: 30px;
-  padding: 10px;
+  border-radius: 15px;
+  padding: 20px 10px;
 }
 
 .serviceMainBox {
@@ -315,18 +325,192 @@ section.aboutSection {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 15px 0px;
+}
+
+.serviceTitle .imgBox  {
+  background: #D9D9D9;
+  width: 50px;
+  border-radius: 70px;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .serviceTitle img {
-  background: #D9D9D9;
-  width: 60px;
-  height: 60px;
-  padding: 14px;
-  border-radius: 70px;
+  width: auto;
+  height: auto;
+  transform: scale(1.1);
 }
 
 .serviceTitle p {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 0;
+}
+
+.serviceMainBox .serviceCard .serviceCardDescription p {
+  font-size: 12.9px;
+}
+
+/*-- President Message ---*/
+
+.PresidentMessageSection {
+  background: #F4F1FF;
+  padding: 70px 0px;
+  margin-top: 70px;
+}
+
+.PrcdntMsagTextBox {
+  margin-top: -11%;
+  margin-right: 0%;
+  text-align: center;
+}
+
+.PrcdntMsagTextBox p {
+  line-height: 1.4;
+  margin-bottom: 0px;
+}
+
+
+.presidentName {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.8!important;
+}
+
+.presidentDesignation {
+  color: #280b7d;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/*-- Counter Box --*/
+
+.counterSection {
+  margin-top: 35px;
+  padding: 35px 0px;
+}
+
+.counterMainBox {
+  display: flex;
+  gap: 0px;
+  flex-direction: column;
+}
+.counterBox {
+  border: 1.5px solid #ff623e;
+  margin: 10px 0px;
+  padding: 40px 70px;
+  text-align: center;
+  border-radius: 20px 0px 20px 20px;
+}
+
+.counterNumber {
+  font-size: 32px;
+  color: #280B7D;
+  font-weight: 800;
+}
+
+.counterInrBox {
+  display: flex;
+  gap: 20px;
+}
+
+.mt-40{
+  margin-top: 40px;
+}
+
+/*--- Footer ----*/
+
+.footer {
+  background: #13063C;
+  background-image: url(/_next/static/media/footerbg.b41dce30.png);
+  padding: 70px 0px;
+  margin-top: 70px;
+  background-repeat: no-repeat;
+}
+
+.footerAddress {
+  margin-top: 20px;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footerLogo span img {
+  margin-bottom: 35px;
+}
+
+.FooterSocialLink {
+  color: #fff;
+}
+
+
+p.ftrHeading {
+  height: 83px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+p.ftrHeading span {
+  color: #F6821F;
+}
+
+.footerColumnBox ul {
+  color: #fff;
+  margin: 0;
+  padding: 0px 20px;
+}
+
+.footerColumnBox ul li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  font-size: 14px;
+  position: relative;
+}
+
+.footerColumnBox ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footerColumnBox ul li::before {
+  position: absolute;
+  content: " ";
+  width: 7px;
+  height: 7px;
+  background: #F6821F;
+  left: -20px;
+  top: 8px;
+}
+
+.FooterSocialLink {
+  color: #fff;
+  display: flex;
+  gap: 30px;
+  margin: 30px 0px;
+}
+
+.callusBox {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.callusBox_title {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.callusBox_title:after {
+  border-bottom: 1.5px solid #F6821F;
+  position: absolute;
+  content: " ";
+  right: 75%;
+  left: 0px;
+  bottom: -10px;
 }

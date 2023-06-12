@@ -1,5 +1,4 @@
 
-import styles from '../../../style/page.module.css'
 import Image from 'next/images';
 
 export default function Header() {
